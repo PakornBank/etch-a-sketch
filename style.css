@@ -1,0 +1,83 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    background-color: grey;
+    gap: 0; */
+    justify-content: space-between;
+}
+
+.row {
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.cell {
+    background-color: white;
+    flex: auto;
+    /*  add transform delay fast in slow out*/
+    transition: transform 0.1s ease ;
+
+
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+button {
+    margin-top: 20px;
+    /* a beautiful button */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 0.5em;
+    transition: 0.1s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#clearButton {
+    background-color: red;
+}
+
+
+footer {
+    /* make footer background full */
+    width: 100%;
+    margin-top: 30px;
+    background-color: lightblue;
+    padding-top: 10px;
+}
+
+footer p,img,a {
+    margin: 5px;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
